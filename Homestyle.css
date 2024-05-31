@@ -1,0 +1,575 @@
+*
+{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+.header
+{
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(rgba(7,9,30,.7),rgba(7,9,30,.7)),url(image/banner.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+.navbar
+{
+    height: 100px;
+
+    display: flex;
+    justify-content: space-between;
+}
+.logo a img
+{
+    width: 110px;
+    margin: 30px;
+}
+.menubar ul li
+{
+    padding: 30px 15px;
+    display: inline-block;
+    text-decoration: none;
+}
+.menubar ul li a
+{
+    text-decoration: none;
+    color: white;
+    font-family: sans-serif;
+    font-size: 13px;
+    font-weight: bolder;
+}
+.menubar ul li::after
+{
+    content: "";
+    width: 0%;
+    height: 2px;
+    background-color: brown;
+    display: block;
+    margin: auto;
+    transition: .20s ;
+}
+.menubar ul li:hover::after
+{
+    width: 100%;
+}
+.textbox
+{
+    width: 90%;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    color: white;
+    font-family: sans-serif;
+}
+.textbox h1
+{
+    font-size: 50px;
+}
+.textbox p
+{
+    margin: 15px 0px 25px;
+    font-size: 13px;
+    padding: 0px 300px;
+    color: rgb(219, 214, 214);  
+}
+.textbox a
+{
+    color: white;
+    border: 1px solid white;
+    display: inline-block;
+    padding: 10px 20px ;
+    text-decoration: none;
+    font-size: 13px ;
+    transition: 1s;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.textbox a:hover
+{
+    background-color: rgb(171, 58, 58);
+    border:1px solid rgb(171, 58, 58);
+}
+.course 
+{
+    width: 80%;
+    margin: auto;
+    padding-top: 110px;
+    height: 450px;   
+}
+.course h1
+{
+    text-align: center;
+    font-size: 28px;
+    font-weight: 700;
+    font-family: sans-serif;
+    margin-bottom: 10px ;
+}
+.course >p
+{
+    text-align: center;
+    font-size: 13px;
+    color: rgb(111, 107, 107);
+    margin-bottom: 50px ;
+
+}
+.course .row
+{
+    display: flex;
+    justify-content: space-evenly;
+}
+.course .course-col
+{
+    border-radius: 15px;
+    background-color: rgb(246, 221, 221);
+    text-align: center;
+    padding: 20px 30px ;
+    margin-left: 20px ;
+    transition: .7s;
+}
+.course .course-col h2
+{
+    font-family: sans-serif;
+    margin-bottom: 12px ;
+    font-weight: 15;
+}
+.course .course-col p
+{
+    font-size: 14px ;
+    font-family: sans-serif;
+    color: rgb(139, 135, 135);
+}
+.row .course-col:hover
+{
+box-shadow: 0px 0px 20px rgb(124, 122, 122);
+}
+.campus 
+{
+    width: 80%;
+    margin: auto;
+    height: 700px;
+    /* background-color: aquamarine;    */
+}
+.campus h1
+{
+    text-align: center;
+    font-size: 28px;
+    font-weight: 700;
+    font-family: sans-serif;
+    margin-bottom: 10px ;
+}
+.campus >p
+{
+    text-align: center;
+    font-size: 13px;
+    color: rgb(111, 107, 107);
+    margin-bottom: 50px ;
+}
+.campus .row
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.campus .row .campus-col 
+{
+    width: 320px;
+    height: 520px;
+    overflow: hidden;
+    position: relative;
+}
+.campus .row .campus-col img
+{
+    width: 100%;
+}
+.campus .row .campus-col .layer
+{
+    background-color: transparent;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    /* bottom: 2%; */
+    width: 100%;
+    height: 87.3%;
+    transition: .5s;
+}
+.campus .row .campus-col .layer:hover
+{
+    background-color:rgba(209, 36, 44, 0.7);
+} 
+.layer h3
+{
+    width: 100%;
+    color: #fff;
+    transform: translate(-50%);
+    position: absolute;
+    left: 50%;
+    transition: .5s;
+    bottom: -10%;
+    font-size: 25px;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.layer:hover h3
+{
+    bottom: 45%;
+}
+.facility 
+{
+    width: 80%;
+    margin: auto;
+    height: 570px;
+    /* background-color: aquamarine;    */
+}
+.facility h1
+{
+    text-align: center;
+    font-size: 28px;
+    font-weight: 700;
+    font-family: sans-serif;
+    margin-bottom: 10px ;
+}
+.facility >p
+{
+    text-align: center;
+    font-size: 13px;
+    color: rgb(111, 107, 107);
+    margin-bottom: 50px ;
+}
+.facility .row
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.facility .row .facility-col 
+{
+    width: 300px;
+    height: 350px;
+    overflow: hidden;
+    position: relative;
+    /* background-color: aquamarine; */
+}
+.facility .row .facility-col img
+{
+    width: 100%;
+}
+.facility .row .facility-col h3
+{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 15;
+    margin-top: 10px ;
+    margin-bottom: 10px;
+}
+.facility .row .facility-col p
+{
+    font-size: 12px ;
+    color: gray;
+}
+.rating
+{
+    width: 80%;
+    margin: auto;
+    height: 350px;   
+}
+.rating h1
+{
+    text-align: center;
+    font-size: 28px;
+    font-weight: 700;
+    font-family: sans-serif;
+    margin-bottom: 10px ;
+}
+.rating >p
+{
+    text-align: center;
+    font-size: 13px;
+    color: rgb(111, 107, 107);
+    margin-bottom: 50px ;
+
+}
+.rating .row
+{
+    display: flex;
+    justify-content: space-evenly;
+}
+.rating .rating-col
+{
+    background-color: rgb(246, 221, 221);
+    padding: 20px 30px ;
+    margin-left: 20px ;
+}
+.rating .rating-col img
+{
+    height: 40px ;
+    width: 40px;
+    border-radius: 50px;
+}
+.rating .rating-col p
+{
+    font-size: 13px ;
+    margin-left: 70px ;
+    margin-top: -40px ;
+    color: gray;
+}
+.rating .rating-col h2 
+{
+    font-size: 20px;
+    margin-left: 70px;
+    margin-top: 10px ;
+}
+.rating .rating-col #icon 
+{
+    color: rgb(197, 146, 19);
+    margin-left: 70px;
+    margin-top: 10px ;
+}
+.rating .rating-col i
+{
+    color: rgb(202, 151, 22);
+}
+.banner
+{
+    height: 250px ;
+    width: 90%;
+    margin: auto;
+    background: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)),url(image/banner2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+.b1
+{
+    height: 100px;
+    margin: auto;
+    text-align: center;
+}
+.b1 h1
+{
+    font-size: 35px ;
+    padding-top: 70px ;
+    color: rgb(243, 236, 225);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: 650px; 
+    margin: auto;
+
+}
+.b1 a
+{
+    color: white;
+    border: 1px solid white;
+    display: inline-block;
+    padding: 5px 20px ;
+    text-decoration: none;
+    font-size: 13px ;
+    transition: 1s;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 10px ;
+}
+.b1 a:hover
+{
+    background-color: rgb(171, 58, 58);
+    border:1px solid rgb(171, 58, 58);
+}
+.about
+{
+    width: 80%;
+    margin: auto;
+    height: 180px;   
+}
+.about h2
+{
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+    font-family: sans-serif;
+    /* margin-bottom: 10px ; */
+    margin-top: 80px;
+}
+.about >p
+{
+    font-size: 12px;
+    word-spacing: 1px;
+    letter-spacing: .30px;
+    color: rgb(111, 107, 107);
+    margin-bottom: 50px ;
+    width: 550px;
+    text-align: center;
+    margin: auto;
+    padding-top: 15px ;
+}
+.about .icons
+{
+    margin: auto;
+    /* background-color: rgb(162, 131, 131); */
+    width: 200px ;
+    padding-left: 5px ;
+    padding-top: 18px ;
+    font-size: 20px ;
+}
+.about .icons i
+{
+    color: rgb(203, 75, 53);
+    margin-left: 20px ;
+}
+.about .para i
+{
+    color: rgb(203, 75, 53);
+}
+
+
+
+@media (min-width:250px) and (max-width:700px)
+{
+    body
+    {
+        width: 100%;
+        /* overflow-x: hidden; */
+    }
+    .header
+    {
+        width: 100%;
+        margin: auto;
+    }
+     .navbar .menubar
+    {
+        visibility: hidden;
+    }
+
+    .textbox h1
+    {
+        font-size: 30px;
+        margin-top: 60px ;
+    }
+    .textbox p
+    {
+        font-size: 15px;
+        margin-top: 20px ;
+        padding: 0px;
+    }
+    .course .row
+    {
+        display: block;
+    }
+    .course .row .course-col
+    {
+        margin-bottom: 30px ;
+        margin-left: 0px;
+    }
+    .campus
+    {
+        margin-top: 350px ;
+    }
+    .campus .row
+    {
+        display: block;
+    }
+    .campus .row .campus-col
+    {
+        margin: auto;
+    }
+    .facility
+    {
+        margin-top: 1000px;
+    }
+    .facility .row
+    {
+        display: block;
+    }
+    .facility .row .facility-col
+    {
+        margin: auto;
+    }
+    .rating
+    {
+        margin-top: 700px;
+    }
+    .rating .row
+    {
+        display: block;
+    }
+    .rating .row .rating-col
+    {
+        margin-bottom: 30px ;
+        margin-left: 0px;
+    }
+    .banner
+    {
+        margin: auto;
+
+        margin-top: 250px ;
+    }
+    .banner .b1 h1
+    {
+        font-size: 17px ;
+        width: 200px;
+    }
+    .banner .b1 a
+    {
+        width: 150px;
+        font-size: 10px;
+    }
+    .about
+    {
+        margin: auto;
+    }
+    .about p
+    {
+        width: 300px;
+    }
+}
+
+@media (min-width:700px) and (max-width:1280px)
+{
+    .textbox p
+    {
+        padding: 0px 200px;
+    }
+    .campus 
+    {
+        width: 80%;
+        margin: auto;
+        height: 460px;
+    }
+    .campus h1
+    {
+        margin-top: 100px ;
+    }
+    .campus >p
+    {
+        text-align: center;
+        font-size: 13px;
+        color: rgb(111, 107, 107);
+        margin-bottom: 50px ;
+    }
+    .campus .row .campus-col 
+    {
+        width: 190px;
+        height: 308px;
+    }
+  
+    .banner
+    {
+        height: 250px ;
+        width: 90%;
+        margin: auto;
+        margin-left: 50px;
+        margin-top: 50px;
+    }
+    .b1 h1
+    {
+        font-size: 25px ;
+    } 
+    .facility 
+    {
+        height: 500px;
+    }
+    .facility .row .facility-col 
+    {
+        width: 180px;
+    }
+}

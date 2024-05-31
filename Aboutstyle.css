@@ -1,0 +1,263 @@
+*
+{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+.header
+{
+    height: 40vh;
+    width: 100%;
+    background: linear-gradient(rgba(7,9,30,.7),rgba(7,9,30,.7)),url(image/background.jpg);
+    background-size: 100% 100%;
+    /* background-position: center; */
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+.navbar
+{
+    height: 100px;
+    /* background-color: black; */
+    display: flex;
+    justify-content: space-between;
+}
+.logo a img
+{
+    width: 110px;
+    margin: 30px;
+}
+.menubar ul li
+{
+    padding: 30px 15px;
+    display: inline-block;
+    text-decoration: none;
+}
+.menubar ul li a
+{
+    text-decoration: none;
+    color: white;
+    font-family: sans-serif;
+    font-size: 13px;
+    font-weight: bolder;
+}
+.menubar ul li::after
+{
+    content: "";
+    width: 0%;
+    height: 2px;
+    background-color: brown;
+    display: block;
+    margin: auto;
+    transition: .20s ;
+}
+.menubar ul li:hover::after
+{
+    width: 100%;
+}
+.textbox
+{
+    width: 90%;
+    top: 20%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    color: white; 
+}
+.textbox h1
+{
+    font-size: 20px;
+    font-family:  Arial, sans-serif;
+}
+.about
+{
+    display: flex;
+    padding-top: 120px;
+    width: 80%;
+    margin: auto;
+    justify-content: space-around;
+}
+.about .a1
+{
+    width: 50%;
+}
+.about .a1 h1
+{
+    font-family: sans-serif;
+}
+.about .a1 p
+{
+    font-family: sans-serif;
+    color: gray;
+    font-size: 13px ;
+    word-spacing: 1px ;
+    margin-top: 20px ;
+}
+.about .a1 a
+{
+    
+    color: rgb(0, 0, 0);
+    border: 1px solid rgb(0, 0, 0);
+    display: inline-block;
+    padding: 10px 20px ;
+    text-decoration: none;
+    font-size: 13px ;
+    transition: 1s;
+    font-family:  sans-serif;
+    margin-top: 20px ;
+    border-radius: 3px ;
+}
+.about .a1 a:hover
+{
+    background-color: rgb(171, 58, 58);
+    border:1px solid rgb(171, 58, 58);
+    color: aliceblue;
+}
+.a2 img
+{
+    width: 500px ;
+    height: 330px;
+}
+.aboutus
+{
+    width: 80%;
+    margin: auto;
+    height: 180px;   
+}
+.aboutus h2
+{
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+    font-family: sans-serif;
+    /* margin-bottom: 10px ; */
+    margin-top: 80px;
+}
+.aboutus >p
+{
+    font-size: 12px;
+    word-spacing: 1px;
+    letter-spacing: .30px;
+    color: rgb(111, 107, 107);
+    margin-bottom: 50px ;
+    width: 550px;
+    text-align: center;
+    margin: auto;
+    padding-top: 15px ;
+}
+.aboutus .icons
+{
+    margin: auto;
+    /* background-color: rgb(162, 131, 131); */
+    width: 200px ;
+    padding-left: 5px ;
+    padding-top: 18px ;
+    font-size: 20px ;
+}
+.aboutus .icons i
+{
+    color: rgb(203, 75, 53);
+    margin-left: 20px ;
+}
+.aboutus .para i
+{
+    color: rgb(203, 75, 53);
+}
+
+
+@media (min-width:700px) and (max-width:1280px)
+{
+    .about
+    {
+        width: 90%;
+        justify-content: space-between;
+    }
+    .about .a1
+    {
+        width: 300px ;
+    }
+    .about .a2 img
+    {
+        width: 380px ;
+        height: 350px ;
+    }
+}
+@media (min-width:250px) and (max-width:700px)
+{
+    body
+    {
+        overflow-x: hidden;
+    }
+    .header
+    {
+        width: 100%;
+        margin: auto;
+        
+    }
+ .navbar .menubar
+    {
+        visibility: hidden;
+        /* width: auto; */
+    }
+    .textbox h1
+    {
+        font-size: 30px;
+        margin-top: 60px ;
+    }
+    .textbox p
+    {
+        font-size: 15px;
+        margin-top: 20px ;
+        padding: 0px;
+    }
+    .about
+    {
+        display: block;
+    }
+    .about .a1
+    {
+        width: 100%;
+        text-align: center;
+    }
+    .about .a1 h1
+    {
+        font-size: 18.5px;
+    }
+    .about .a1 p
+    {
+        font-size: 12px;
+    }
+    .a2
+    {
+        width: auto;
+        /* margin: auto; */
+        /* background-color: antiquewhite; */
+        top: 50%;
+        left: 50%;
+        position: absolute;
+        transform: translate(-50%,-50%);
+        text-align: center;
+        margin-top: 400px;
+    }
+    .a2 img
+    {
+        width: 350px ;
+        height: 270px;
+        margin-top: 40px;
+        /* margin-left: 10%; */
+        align-items: center;
+
+    }
+    .aboutus
+    {
+        margin: auto;
+        margin-top: 430px;
+    }
+    .aboutus p
+    {
+        width: 300px;
+    }
+
+
+    
+}
